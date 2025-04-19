@@ -1,308 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adeles-Game</title>
+<html>
+ <head><title>BINGO</title>
 
-    <!-- font awesome css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="animate.min.css" rel="stylesheet">
-        <link href="bootstrap.min.css" rel="stylesheet">
-
-    <!-- local css file -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      
-  
-  <!-- Top Bar Start -->
-  <div class="top-bar d-none d-md-block">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="top-bar-left">
-                    <div class="text">
-                        <i class="fa fa-phone-alt"></i>
-                        <p>+251943901638</p>
-                    </div>
-                    <div class="text">
-                        <i class="fa fa-envelope"></i>
-                        <p>info@adelesgame.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="top-bar-right">
-                    <div class="social">
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="landscape"/>
+    
+    <link rel="stylesheet" href="css/kidamie.css">
+    <link rel="stylesheet" href="css/splash.css">
+    <script src="js/generatCard.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    
+</head>
+<body>
+  <div class="containerSplash" id="splash">
+    <div class="contentSplash">
+      <h2 class="frame-1">Adeles Game</h2>
+      <h2 class="frame-2">Socialize Playing Our Games</h2>
+      <h2 class="frame-3">adelesgame.com.et</h2>
+      <h2 class="frame-4">Play!</h2>
+     
     </div>
-</div>
-<!-- Top Bar End -->
-  <!-- Nav Bar Start -->
-  <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand">Adeles Game</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-          <div class="navbar-nav ms-auto " >
-              <a href="#" class="nav-item nav-link active">Home</a>
-              <a href="#about" class="nav-item nav-link">About</a>
-              <a href="#services" class="nav-item nav-link">Services</a>
-              <a href="#projects" class="nav-item nav-link">Projects</a>
-              
-              <a href="#contact" class="nav-item nav-link">Contact</a>
-          </div>
-      </div>
   </div>
-</div>
-<!-- Nav Bar End -->
- 
-
-    <!-- home section -->
-    <section id="home" class="home">
-      <h1 class="display-1 text-white mb-md-4 animated zoomIn">
-        we develop intersting social Games  <br />
-      
-      </h1>
-      <h2 class="text-primary text-uppercase mb-3 animated slideInDown">
-        we dream big and get huge<br/>
-      </h2>
-    </section>
-    <!-- home section -->
-
-    <!-- about section -->
-    <section id="about" class="about">
-      <div class="box-container">
-        <div class="box">
-          <h2 class="heading">about the company</h2>
-          <p>
-            Adeles Game is a game developing startup company in which satsfies customers by developing social HTML5 games!
-          </p>
-          <p>
-            By now Adeles game is at birth and fast growing company in recent times we published BINGO REAL game at facebook and at play store.   
-          </p>
-        </div>
-
-        <div class="box">
-          <img src="images/Adeles.jpg" alt="" />
-        </div>
+  
+    <div id="allthethings" >
+    <div id="lang" class="lang">Langauge/ቋንቋ: 
+      <select id="language-select">select language
+        <option value="en">English</option>
+        <option value="fr">አማረኛ</option>
+      </select>
+      <div >Speed/ፍጥነት:
+        <select id="speed">select Speed
+          <option value="fast" id="fast">Fast</option>
+          <option value="slow" id="slow">Slow</option>
+        </select>
       </div>
-    </section>
-    <!-- about section -->
-
-    <!-- team section -->
-    <section id="team" class="team">
-      <h2 class="heading">meet our team</h2>
-      <div class="box-container">
-        <div class="box">
-          <div class="image">
-            <img src="images/natnael.jpg" alt="" />
-          </div>
-          <div class="info">
-            <h3>Natnael Zewdu</h3>
-            <p>
-              Natnael Zewdu is founder and CEO of Adeles Game.
-            </p>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/fetene.jpg" alt="" />
-          </div>
-          <div class="info">
-            <h3>Fetene Dejene</h3>
-            <p>
-              Fetene Dejene is Marketing Manager at Adeles Game.
-            </p>
-          </div>
-        </div>
+      <div >Sound/ድምጽ:
+        <select id="sound">select Sound
+          <option value="on" id="on">On</option>
+          <option value="off" id="off">Off</option>
+        </select>
+      </div>
+      </div>
+    <div class="logo-container">
+    <h1 class="Logos">Real BINGO</h1>
+    <p class="para">Adele's Game የአዴሌዎች ጨዋታ</p>
+  </div>
+    <div class="container"> 
        
-      </div>
-    </section>
-    <!-- team section -->
-
-    <!-- service section -->
-    <section id="services" class="services">
-      <h2 class="heading">our services</h2>
-      <div class="box-container">
-        <div class="box">
-          <div class="image">
-            <img src="images/gameDevelo.jpg" alt="" />
-          </div>
-          <span>Game Development</span>
-          <p>Adeles Game is founded for the purpose of Game development, we will change the isolent gaming environment habit to social gaming zone. </p>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/websiteDesign.jpg" alt="" />
-          </div>
-          <span>web design</span>
-          <p>Adeles Game designs  an intersting and extraordinary websites according to customers preference</p>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img src="images/appDesign.jpg" alt="" />
-          </div>
-          <span>app design</span>
-          <p>Adeles Game design different  and unique apps.</p>
-        </div>
-
-   
-
-        <div class="box">
-          <span>Tech Tutoring</span>
-          <p>Adeles Game tutor students on different Tech Environments. </p>
-        </div>
-
-    </section>
-    <!-- service section -->
-
-    <!-- projects section -->
-    <section id="projects" class="projects">
-      <h2 class="heading">our projects</h2>
-      <div class="box-container">
-        <div class="box">
-          <div class="image">
-            <img src="images/bingoReal.jpg" alt="" />
-            <div class="overlay">
-              <h3>BINGO REAL</h3>
-              <span>BINGO REAL is a bingo game in which a player plays bingo with different options. BINGO Game is published on facebook and playstore.
-                <button id="BingoReal" class="float-left submit-button" >Play Bingo Real in Fullscreen Mode</button>
-                <p><strong>Tip:</strong> Press the "Esc" key to exit full screen.</p>
-                <iframe id="Iframe" src="BingoReal/index.html" width="100%" height="300"   title="Bingo Real"></iframe>
-              
-              </div>
-             
-            </div>
-        
+       <div id="left"></div>
+          <div id="single" class="one"  onclick="twentyFiveBalls(35)" ><p id="35Balls">35 Balls</p></div>
+ 
+          <div id="multiplayer" class="two" onclick="playHouse()"><p id="housePlay">Play with House</p></div>
+        <div id="options" class="three" onclick="twentyFiveBalls(45)" ><p id="45Balls">45 Balls</p></div>
+        <div id="help" class="four" onclick="showAndHide()"><p id="helpLan">Help</p>
+          <div id="SectionName" style="display:none">35 Balls:  is a Bingo game in which 35 balls will bounce, if you close  row, coulmn or diagonal of your card you click Bingo button and that means you win! It will continue untill the last ball.
             
+            ....45 Balls:  is a Bingo game in which 45 balls will bounce, if you close  row, coulmn or diagonal of your card you click Bingo button and that means you win! It will continue untill the last ball if you win again click Bingo button again you will add a coin into your coin Bank!
+            
+           .... Play with House: is a Bingo game in which you play with the house card there is a playing pattern which ever card finish the playing pattern first it will going to be the winner!</div>
         </div>
 
-        <div class="box">
-          <div class="image">
-            <img src="images/work_2.png" alt="" />
-            <div class="overlay">
-              <h3>BINGO Meta</h3>
-              <span>business</span>
-            </div>
-          </div>
-        </div>
+        <div id="right"></div>
+  
+        <div id="exit"></div>
+         <div id="circle"></div>
 
-        <div class="box">
-          <div class="image">
-            <img src="images/work_3.png" alt="" />
-            <div class="overlay">
-              <h3>Tousie</h3>
-              <span>Coming Soon</span>
-            </div>
-          </div>
-        </div>
+       </div>
+     </div>
 
-        <div class="box">
-          <div class="image">
-            <img src="images/beer.jpg" alt="" />
-            <div class="overlay">
-              <h3>Yikefet</h3>
-              <span>Coming Soon</span>
-            </div>
-          </div>
-        </div>
+    
+      <div class ="gameSpace" id ="game">
 
-        <div class="box">
-          <div class="image">
-            <img src="images/card.jpg" alt="" />
-            <div class="overlay">
-              <h3>Yifak Cardu</h3>
-              <span>business</span>
-            </div>
-          </div>
-        </div>
+        <div id="start" class ="showGame"></div>
 
-        <div class="box">
-          <div class="image">
-            <img src="images/work_1.jpg" alt="" />
-            <div class="overlay">
-              <h3>Secca</h3>
-              <span>business</span>
+          <div id="showBall" class="showBall"></div>
+          <div id="playPause" class="holder"><button id="playStartId" class="playAgain" onclick="playStart()"><p >play</p></button>
+            <button  class="playAgain" id="pauseResumeId" onclick="pauseResume()"><p id="hPauseResume">pause</p></button>
+           </div>
+      <div id="playAgain" class="holder"><button id="again" class="playAgain" onclick="playAgain()">Play Again</button>
+        <button  class="playAgain" id="home" onclick="goHome()">Home</button>
+       </div>
+        <div id="coinBank" class="coinBank"></div>
+        <div id="roomName" class ="roomName">Room Name:</div>
+                             
+          <div id="winSpace"></div>
+
+          <div id="showBingo" class="showBingo"></div>
+          <div id="firework">
+            <div class="firework" id="firework1">
+                
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
             </div>
-          </div>
+            <div class="firework" id="firework2">
+                
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+            </div>
+            <div class="firework" id="firework3">
+                
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+                <div class="explosion"></div>
+            </div>
         </div>
+          <div id="badBingo" class="showBingo"></div>
+          <div id="houseBingo" class="showBingo"></div>
+          <div id="roomName" class ="roomName"></div>
+          <div id="showPattern" class="showPattern"></div>
+
+
+
+<div class="board">   
+<table id="Board" class="tableBoard">
+<tr id =bordHeading style="background: #5ed9e2;">
+<th id="b"style="background:  #ff9933;"><label  >B</label></th>
+<th id="i" style="background: #69d025;"><label >I</label></th>
+<th id="n" style="background: #d0c310;"><label >N</label></th>
+<th id="g" style="background:  	#ff4422"><label >G</label></th>
+<th id="o" style="background:  	 	#11aabb"><label >O</label></th>
+</tr>
+<tr id =row1>
+<td id="b1"><label  >1</label></td>
+<td id="i16"><label  >16</label></td>
+<td id="n31"><label  >31</label></td>
+<td  id="g46"><label >46</label></td>
+<td id="o61" ><label >61</label></td>
+</tr>
+<tr id =row2>
+<td id="b2"><label  >2</label></td>
+<td id="i17"><label  >17</label></td>
+<td id="n32"><label  >32</label></td>
+<td id="g47"><label  >47</label></td>
+<td id="o62"><label  >62</label></td>
+</tr>
+<tr id =row3>
+  <td id="b3"><label  >3</label></td>
+  <td id="i18"><label  >18</label></td>
+  <td id="n33"><label  >33</label></td>
+  <td id="g48"><label  >48</label></td>
+  <td id="o63"><label  >63</label></td>
+</tr>
+<tr id =row4>
+  <td id="b4"><label  >4</label></td>
+  <td id="i19"><label  >19</label></td>
+  <td id="n34"><label  >34</label></td>
+  <td id="g49"><label  >49</label></td>
+  <td id="o64"><label  >64</label></td>
+</tr>
+<tr id =row5>
+  <td id="b5"><label  >5</label></td>
+  <td id="i20"><label  >20</label></td>
+  <td id="n35"><label  >35</label></td>
+  <td id="g50"><label  >50</label></td>
+  <td id="o65"><label  >65</label></td>
+</tr><!-- comment -->
+<tr id =row6>
+  <td id="b6"><label  >6</label></td>
+  <td id="i21"><label  >21</label></td>
+  <td id="n36"><label  >36</label></td>
+  <td id="g51"><label  >51</label></td>
+  <td id="o66"><label  >66</label></td>
+</tr><!-- comment -->
+<tr id =row7>
+  <td id="b7"><label  >7</label></td>
+  <td id="i22"><label  >22</label></td>
+  <td id="n37"><label  >37</label></td>
+  <td id="g52"><label  >52</label></td>
+  <td id="o67"><label  >67</label></td>
+</tr>
+<tr id =row8>
+  <td id="b8"><label  >8</label></td>
+  <td id="i23"><label  >23</label></td>
+  <td id="n38"><label  >38</label></td>
+  <td id="g53"><label  >53</label></td>
+  <td id="o68"><label  >68</label></td>
+</tr>
+<tr id =row9>
+  <td id="b9"><label  >9</label></td>
+  <td id="i24"><label  >24</label></td>
+  <td id="n39"><label  >39</label></td>
+  <td id="g54"><label  >54</label></td>
+  <td id="o69"><label  >69</label></td>
+</tr><!-- comment -->
+<tr id =row10>
+  <td id="b10"><label  >10</label></td>
+  <td id="i25"><label  >25</label></td>
+  <td id="n40"><label  >40</label></td>
+  <td id="g55"><label  >55</label></td>
+  <td id="o70"><label  >70</label></td>
+</tr>
+<tr id =row11>
+  <td id="b11"><label  >11</label></td>
+  <td id="i26"><label  >26</label></td>
+  <td id="n41"><label  >41</label></td>
+  <td id="g56"><label  >56</label></td>
+  <td id="o71"><label  >71</label></td>
+</tr><!-- comment -->
+<tr id =row12>
+  <td id="b12"><label  >12</label></td>
+  <td id="i27"><label  >27</label></td>
+  <td id="n42"><label  >42</label></td>
+  <td id="g57"><label  >57</label></td>
+  <td id="o72"><label  >72</label></td>
+</tr><!-- comment -->
+<tr id =row13>
+  <td id="b13"><label  >13</label></td>
+  <td id="i28"><label  >28</label></td>
+  <td id="n43"><label  >43</label></td>
+  <td id="g58"><label  >58</label></td>
+  <td id="o73"><label  >73</label></td>
+</tr>
+<tr id =row14>
+  <td id="b14"><label  >14</label></td>
+  <td id="i29"><label  >29</label></td>
+  <td id="n44"><label  >44</label></td>
+  <td id="g59"><label  >59</label></td>
+  <td id="o74"><label  >74</label></td>
+</tr>
+<tr id =row15>
+  <td id="b15"><label  >15</label></td>
+  <td id="i30"><label  >30</label></td>
+  <td id="n45"><label  >45</label></td>
+  <td id="g60"><label  >60</label></td>
+  <td id="o75"><label  >75</label></td>
+</tr>
+</table> 
+
+</div>
+
+
+<div id="interstitial" class="interstitial">
+  <h3>Interstitial Ads</h3>
+  <input type="button"
+    id="btn-interstitial-preload"
+    onclick="preloadInterstitial();"
+    value="Preload"/>
+  <input type="button"
+    id="btn-interstitial"
+    onclick="showInterstitial();"
+    value="Show"/>
+
+
+    <p id="display-message" class="output"></p>
+  <p id="display-success" class="success"></p>
+  <p id="display-error" class="error"></p>
+</div>
+
+<div id="rewarded" class="rewarded">
+  <h3>Rewarded Videos</h3>
+  <input type="button"
+    id="btn-rewarded-preload"
+    onclick="preloadRewarded();"
+    value="Preload"/>
+  <input type="button"
+    id="btn-rewarded"
+    onclick="showRewarded();"
+    value="Show"/>
+
+    <p id="display-message" class="output"></p>
+  <p id="display-success" class="success"></p>
+  <p id="display-error" class="error"></p>
+</div>
+
+
+
+
+
+
+<div class ="firstCard" id="firstCard"> 
+  <div id = "randomCard" > <table class = "card" >
+  <tr id =card1Heading> <th style="background: #ff9933;"><label id="b" >B</label></th>
+  <th style="background: #69d025;"><label id="i" >I</label></th><th style="background: #d0c310;"><label id="n" >N</label></th><th style="background: #ff4422"><label id="g" >G</label></th><th style="background: #11aabb"><label id="o" >O</label></th></tr>
+  <tr>
+  <td><input type = "button"  class ="cardbtn" id="cardBut1"  onclick="change(id)"></td>
+  <td><input type= "button" class="cardbtn" id="cardBut2" onclick="change(id)" ></td>
+  <td><input  type="button"class="cardbtn"  id="cardBut3"  onclick="change(id)"></td>
+  <td><input type ="button" class="cardbtn"  id="cardBut4" onclick="change(id)"  ></td>		
+  <td><input type ="button"  class="cardbtn"  id="cardBut5" onclick="change(id)" ></td>
+  </tr>	
+  <tr>
+  <td><input type = "button"  class ="cardbtn" id="cardBut6"  onclick="change(id)"></td>
+  <td><input type= "button" class="cardbtn" id="cardBut7" onclick="change(id)" ></td>
+  <td><input  type="button"class="cardbtn"  id="cardBut8"  onclick="change(id)"></td>
+  <td><input type ="button" class="cardbtn"  id="cardBut9" onclick="change(id)"  ></td>		
+  <td><input type ="button"  class="cardbtn"  id="cardBut10" onclick="change(id)" ></td>
+  </tr>	
+  <tr>
+  <td><input type = "button"  class ="cardbtn" id="cardBut11"  onclick="change(id)"></td>
+  <td><input type= "button" class="cardbtn" id="cardBut12" onclick="change(id)" ></td>
+  <td><input  type="button"class="cardbtn"  id="cardBut13"  onclick="change(id)" value ="free"></td>
+  <td><input type ="button" class="cardbtn"  id="cardBut14" onclick="change(id)"  ></td>		
+  <td><input type ="button"  class="cardbtn"  id="cardBut15" onclick="change(id)" ></td>
+  </tr>	
+  <tr>
+  <td><input type = "button"  class ="cardbtn" id="cardBut16"  onclick="change(id)"></td>
+  <td><input type= "button" class="cardbtn" id="cardBut17" onclick="change(id)" ></td>
+  <td><input  type="button"class="cardbtn"  id="cardBut18"  onclick="change(id)"></td>
+  <td><input type ="button" class="cardbtn"  id="cardBut19" onclick="change(id)"  ></td>		
+  <td><input type ="button"  class="cardbtn"  id="cardBut20" onclick="change(id)" ></td>
+  </tr>	
+  <tr>
+  <td><input type = "button"  class ="cardbtn" id="cardBut21"  onclick="change(id)"></td>
+  <td><input type= "button" class="cardbtn" id="cardBut22" onclick="change(id)" ></td>
+  <td><input  type="button"class="cardbtn"  id="cardBut23"  onclick="change(id)"></td>
+  <td><input type ="button" class="cardbtn"  id="cardBut24" onclick="change(id)"  ></td>		
+  <td><input type ="button"  class="cardbtn"  id="cardBut25" onclick="change(id)" ></td>
+  </tr>	
+  
+  </table>
+  <input type ="button" class="bingoBtn"  id="bingoButton" value="BINGO" onclick="whenBingoClicked()" >
+  
+  </div>
+  </div>
+  
+  
+    <div class ="houseCard" id="houseCard"><h5>HOUSE CARD</h5> 
+      <div id = "randomHouseCard" > <table class = "card" >
+      <tr id =cardHouseHeading> <th  style="background: #ff9933;"><label id="hb" >B</label></th>
+      <th style="background: #69d025;"><label id="hi"  >I</label></th><th style="background: #d0c310;"><label id="hn"  >N</label></th><th  style="background: #ff4422"><label id="hg">G</label></th><th style="background: #11aabb"><label id="ho" >O</label></th></tr>
+      <tr>
+      <td><input type = "button"  class ="cardbtn" id="cardHBut1"  ></td>
+      <td><input type= "button" class="cardbtn" id="cardHBut2"  ></td>
+      <td><input  type="button"class="cardbtn"  id="cardHBut3"  ></td>
+      <td><input type ="button" class="cardbtn"  id="cardHBut4"  ></td>		
+      <td><input type ="button"  class="cardbtn"  id="cardHBut5" ></td>
+      </tr>	
+      <tr>
+      <td><input type = "button"  class ="cardbtn" id="cardHBut6"  ></td>
+      <td><input type= "button" class="cardbtn" id="cardHBut7" ></td>
+      <td><input  type="button"class="cardbtn"  id="cardHBut8" ></td>
+      <td><input type ="button" class="cardbtn"  id="cardHBut9"  ></td>		
+      <td><input type ="button"  class="cardbtn"  id="cardHBut10" ></td>
+      </tr>	
+      <tr>
+      <td><input type = "button"  class ="cardbtn" id="cardHBut11" ></td>
+      <td><input type= "button" class="cardbtn" id="cardHBut12"  ></td>
+      <td><input  type="button"class="cardbtn"  id="cardHBut13"   value ="free"></td>
+      <td><input type ="button" class="cardbtn"  id="cardHBut14"  ></td>		
+      <td><input type ="button"  class="cardbtn"  id="cardHBut15"  ></td>
+      </tr>	
+      <tr>
+      <td><input type = "button"  class ="cardbtn" id="cardHBut16" ></td>
+      <td><input type= "button" class="cardbtn" id="cardHBut17" ></td>
+      <td><input  type="button"class="cardbtn"  id="cardHBut18" ></td>
+      <td><input type ="button" class="cardbtn"  id="cardHBut19"  ></td>		
+      <td><input type ="button"  class="cardbtn"  id="cardHBut20" ></td>
+      </tr>	
+      <tr>
+      <td><input type = "button"  class ="cardbtn" id="cardHBut21"  ></td>
+      <td><input type= "button" class="cardbtn" id="cardHBut22"  ></td>
+      <td><input  type="button"class="cardbtn"  id="cardHBut23"  ></td>
+      <td><input type ="button" class="cardbtn"  id="cardHBut24"   ></td>		
+      <td><input type ="button"  class="cardbtn"  id="cardHBut25" ></td>
+      </tr>	
+      
+      </table>
       </div>
-    </section>
-    <!-- projects section -->
-
-    <!-- contact section -->
-    <section id="contact" class="contact">
-      <h2 class="heading">contact us</h2>
-      <div class="box-container">
-        <div class="box">
-          <div class="form-group">
-            <ion-icon name="location-outline"></ion-icon>
-            <span>Adele, Harar </span>
-          </div>
-
-          <div class="form-group">
-            <ion-icon name="call-outline"></ion-icon>
-            <span>+251 943 901 638 </span>
-          </div>
-
-          <div class="form-group">
-            <ion-icon name="mail-outline"></ion-icon>
-            <span>info@adelesgame.com</span>
-          </div>
-        </div>
-
-        <div class="box">
-          <input type="text" placeholder="name" />
-          <input type="text" placeholder="email" />
-          <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-          <button>submit</button>
-        </div>
-      </div>
-    </section>
-    <!-- contact section -->
-
-    <!-- footer section -->
-    <section id="footer" class="footer">
-      <div class="socials">
-        <ion-icon name="logo-google"></ion-icon>
-        <ion-icon name="logo-snapchat"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-youtube"></ion-icon>
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </div>
-
-      <div class="copyright">
-        <p> Adeles Game </p>
-      </div>
-    </section>
-    <!-- footer section -->
+    </div>
    
-    <!-- local js file -->
-    <script src="script.js"></script>
-  </body>
+  
+
+</div>
+
+
+
+
+
+<script src="js/singleBingo.js"></script>   
+<script src="js/language.js"></script>  
+</body>
 </html>
